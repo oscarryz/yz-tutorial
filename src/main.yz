@@ -19,18 +19,17 @@ exit     —
 
 print(banner())
 
-keep_going : true
-
-while({ keep_going }, {
-  option: read("Yz> ")
+option: ""
+while({ option != "exit" }, {
+  option = read("Yz> ")
   match 
-    { option == "docs" => print(documentation) },
-    { option == "examples" => print(examples) }, 
-    { option == "compile" => print(compile) },
-    { option == "run" => print(run) },
-    { option == "clear" => print(clear) },
-    { option == "help" => print(help) },
-    { option == "exit" => keep_going = false },
+    { option == "docs"     => print(documentation) },
+    { option == "examples" => print(examples)      },
+    { option == "compile"  => print(compile)       },
+    { option == "run"      => print(run)           },
+    { option == "clear"    => print(clear)         },
+    { option == "help"     => print(help)          },
+    { option == "exit"     =>                      },
     { print("command not found: ${option} — type help") }
 })
 
