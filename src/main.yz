@@ -17,7 +17,7 @@ help     — this list
 exit     — 
 "
 
-print(banner)
+print(banner())
 
 keep_going : true
 
@@ -35,19 +35,4 @@ while({ keep_going }, {
 })
 
 
-banner: "
- oooooo   oooo            
- \`888.   .8'             
-  \`888. .8'     oooooooo 
-   \`888.8'     d'\"\"7d8P  
-    \`888'        .d8P'   
-     888       .d8P'  .P 
-    o888o     d8888888P  
 
-Yz :: v0.0.1 :: a language where everything is a block of code
-
-async by default · structural typing · no null · nothing to install
-
-type examples or documentation · tab completes · enter runs
-___________________________________________________________________
-"
