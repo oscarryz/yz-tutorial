@@ -1,0 +1,7 @@
+// placeholder file until `while` becomes part of the 
+// stdlib 
+// This is a recursive function that evaluates `condition`
+// and executed `body` until the contidion is false
+while #(cond #(Bool), body #()) {
+    cond() ? { body(); while(cond, body) }, {}
+}
