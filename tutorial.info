@@ -1,0 +1,7 @@
+// This file is still inert but 
+// but "soon" it will be used 
+// as entry point for the program
+name: "Yz tutorial"
+yz: "0.0.0+" 
+src_path: ["./src"]
+entry: "main.yz"
